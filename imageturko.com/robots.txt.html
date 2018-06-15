@@ -1,0 +1,103 @@
+                                                                                                                                                                                                                                                                <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1" />
+	<title>IMAGETURKO - </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Free Image Hosting  -  - powered by CF Image Hosting" />
+	<meta name="keywords" content="images, photos, image hosting, photo hosting, free image hosting"/>
+	<meta name="robots" content="index,follow"/>
+	<link href="http://imageturko.com/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" title="IMAGETURKO Feed" href="http://imageturko.com/feed.php" />
+	<link rel="stylesheet" href="http://imageturko.com/themes/imgur/imgur.css?v=0.27" type="text/css" />
+	
+	<script type= "text/javascript">
+		var max = 5;
+		var extArray = new Array("png","jpg","jpeg","gif","bmp","psd");
+	</script>
+</head>
+<body id="home">
+<div id="wrap">
+	<div id="header" class="clear">
+		<div id="logo">
+			<h1><a href="http://imageturko.com/index.php" title="IMAGETURKO Anasayfa">IMAGETURKO</a></h1>
+			<h2></h2>
+		</div>
+
+		<div class="languages" onMouseOver="document.getElementById('language').style.display='block'" onMouseOut="document.getElementById('language').style.display='none'">
+			<div class="lan_on"><span>Site Dili :</span><img src="http://imageturko.com/languages/turkce.png" width="23" height="15" alt="turkce" title="turkce" /></div>
+			<div id="language" class="language" ><a href="http://imageturko.com/index.php?lang=portugueseBR" title="portugueseBR" rel="nofollow"><img src="http://imageturko.com/languages/portugueseBR.png" alt="portugueseBR" width="23" height="15" /></a> <a href="http://imageturko.com/index.php?lang=spanish" title="spanish" rel="nofollow"><img src="http://imageturko.com/languages/spanish.png" alt="spanish" width="23" height="15" /></a> <a href="http://imageturko.com/index.php?lang=english" title="english" rel="nofollow"><img src="http://imageturko.com/languages/english.png" alt="english" width="23" height="15" /></a> <a href="http://imageturko.com/index.php?lang=francais" title="francais" rel="nofollow"><img src="http://imageturko.com/languages/francais.png" alt="francais" width="23" height="15" /></a> <a href="http://imageturko.com/index.php?lang=german" title="german" rel="nofollow"><img src="http://imageturko.com/languages/german.png" alt="german" width="23" height="15" /></a> </div>
+			<div class="clear_both"></div>
+		</div>
+
+			<div id="nav">
+			<ul id="main-nav">
+				<li><a  class="current"  href="http://imageturko.com/" title="Anasayfa">Anasayfa</a></li>
+								<li><a  href="http://imageturko.com/faq.php" title="SSS">SSS</a></li>				<li><a  href="http://imageturko.com/tos.php" title="Kullanım Koşulları">Kullanım Koşulları</a></li>				<li><a  href="http://imageturko.com/contact.php" title="İletişim">İletişim</a></li>			</ul>
+		</div>
+	<div class="clear"></div>
+	</div>
+	<div id="content">
+                                                                                                                                                                                                                                                                		<div class="contentBox">
+			<div class="">
+							<p class="teaser">Bedava Fotoğraf/Resim Yükleyin, Arkadaşlarınızla,Ailenizle ve Meslektaşlarınızla Paylaşın.</p>
+				<p class="teaser">
+															<b>Desteklenen Resim Formatları:</b> png, jpg, jpeg, gif, bmp, psd<br />
+					<b>Maksimum Dosya Boyutu:</b> 1 MB				</p>
+							<form enctype="multipart/form-data" action="http://imageturko.com/upload.php" method="post" class="upform" name="upload" id="upload">
+					<div class="upload_op">
+						<a id="linklocal" class="linklocal show" title="Bilgisayardan Resim Yükle">BİLGİSAYARDAN</a>
+						<a id="linkremote" class="linkremote" title="Uzak Resim Kopyası">UZAK</a>
+					</div>
+					<div class="loading">
+						<label>Resim Yükleniyor...</label>
+						<div id="uoloadingImage"></div>
+					</div>
+					<div class="input file">
+					<a class="closeUpload" href="robots.txt.html#" title="Close"> </a>
+						<div class="upload_form">
+							<div id="remote_panel" class="file_url" style="display: none;">
+								<label for="imgUrl">Resim URL sini Buraya Yapıştırın</label>
+								<input type="text" name="imgUrl" id="imgUrl"  class="text_input long" />
+							</div>
+							<div id="local_panel" class="file_upload">
+								<label for="file">Resim Yükle: </label>
+								<div class="file_input_div"><input type="text" id="fileName" name="fileName[]"  class="text_input long" readonly="readonly" />
+									<input type="button" value="Gözat" name="Search files" class="file_input_button" />
+									<input type="file" name="file[]" id="file" class="file_input_hidden" onchange="javascript: copyfileName()" />
+								</div>
+							</div>
+						</div>
+						<label for="alt" class="des">Açıklama: (İsteğe Bağlı)</label>
+						<input type="text" name="alt[]" id="alt" class="text_input long_des" />
+
+											</div>
+					<div class="Upload_Multiple"><span>Çoklu Resim Yükle </span><a href="robots.txt.html#" class="add_another_file_input"></a><small>(max 5)</small></div>					<input name="submit" type="submit" id="uploadbutton" value="Yükle" class="button" onclick="return fileExt(extArray)" />
+					<div class="clear_both"></div>
+					<p>Lütfen adult (+18) fotoğraf yüklemeyin,yasaktır!<br/>Bu tür içerikler silinecektir. Lütfen <a href="http://imageturko.com/tos.php" title="Kullanım Koşulları">Kullanım Koşulları</a> Yükleme Kurallarını Okuyun.</p>				</form>
+			</div>
+							</div>
+		<div class="clear"></div>
+	</div>
+		<div id="footer">
+		<p>Copyright © - All Rights Reserved.</p>
+				<div class="sp"></div>
+		<p>Powered By CF Image Hosting script | Design By <a href="http://codefuture.co.uk" title="codefuture.co.uk - online webmaster tools,code Generators">codefuture.co.uk</a></p>
+	</div>
+</div>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='http://imageturko.com/js/jquery-1.5.1.min.js'>\x3C/script>")</script>
+	<script type="text/javascript" src="http://imageturko.com/js/tipsy.js"></script>
+	<script type="text/javascript" src="http://imageturko.com/js/user.js"></script>
+<!-- footer hook -->
+	
+	<!--[if lt IE 7 ]>
+		<script src="js/dd_belatedpng.js"></script>
+		<script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+	<![endif]-->
+ 
+</body>
+</html>
+                                                                                                                                                                                                                                                                
